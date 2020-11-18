@@ -22,9 +22,9 @@ public class Empresa {
     @Column(nullable = false)
     private String web;
     @ManyToOne()
-    @JsonManagedReference
+    @JoinColumn(name = "categoria_id")
     private Categoria categoria;
     @ManyToOne()
-    @JsonManagedReference
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 }

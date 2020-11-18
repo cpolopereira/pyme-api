@@ -2,6 +2,7 @@ package com.devpolo.pymeapi.controllers;
 
 import com.devpolo.pymeapi.exceptions.ResourceNotFoundException;
 import com.devpolo.pymeapi.models.Categoria;
+import com.devpolo.pymeapi.models.Empresa;
 import com.devpolo.pymeapi.models.Usuario;
 import com.devpolo.pymeapi.services.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;

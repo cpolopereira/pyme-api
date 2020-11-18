@@ -20,7 +20,5 @@ public class Usuario {
     private String apellidos;
     @Column(nullable = false)
     private String email;
-    @OneToMany(mappedBy = "usuario",cascade = CascadeType.ALL)
-    @JsonBackReference
-    private List<Empresa> empresas;
+
 }

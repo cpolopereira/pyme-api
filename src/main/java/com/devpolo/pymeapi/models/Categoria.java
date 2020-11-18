@@ -16,8 +16,4 @@ public class Categoria {
 
     @Column(nullable = false)
     private String nombre;
-
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
-    @JsonBackReference
-    private List<Empresa> empresas;
 }

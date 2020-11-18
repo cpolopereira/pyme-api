@@ -39,4 +39,14 @@ public class EmpresaServiceImpl implements EmpresaService {
     public Empresa eliminar() {
         return null;
     }
+
+    @Override
+    public List<Empresa> findByIdUsuario(int id) {
+        return empresasRepository.findAllByUsuarioId(id);
+    }
+
+    @Override
+    public List<Empresa> findByIdCategoria(int id) {
+        return empresasRepository.findAllByCategoriaId(id);
+    }
 }
